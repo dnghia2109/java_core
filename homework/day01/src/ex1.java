@@ -8,6 +8,6 @@ public class ex1 {
         System.out.println("b - a = "+ (-a+b));
         System.out.println("a * b = "+ (a*b));
         System.out.println("a / b = "+ (a/b));
-        System.out.println("b / a = "+ (b/a));
+        System.out.println("b / a = "+ ((double) b/a));
     }
 }
