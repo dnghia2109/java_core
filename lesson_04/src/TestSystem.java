@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class TestSystem {
     public static void main(String[] args) {
+        int[] array = demo_array.createArray();
         int[] arr = new int[8];
         arr[0] = 2;
         arr[1] = 1;
