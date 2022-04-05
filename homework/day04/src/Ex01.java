@@ -13,10 +13,10 @@ public class Ex01 {
         System.out.println("Nhập vào tên của bạn: ");
         String str = sc.nextLine();
         str = str.toLowerCase();
-        String[] Name = str.split(" ");
+        String[] name = str.split(" ");
         str = "";
-        for(int i = 0; i < Name.length; i++){
-            str += String.valueOf(Name[i].charAt(0)).toUpperCase() + Name[i].substring(1) + " ";
+        for(int i = 0; i < name.length; i++){
+            str += String.valueOf(name[i].charAt(0)).toUpperCase() + name[i].substring(1) + " ";
         }
         System.out.println();
         return str;
