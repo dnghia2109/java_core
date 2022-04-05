@@ -29,7 +29,6 @@ public class Ex06 {
         while (true) {
             System.out.print("Mời bạn nhập số điện thoại: ");
             num = sc.nextLine();
-//            Pattern p = Pattern.compile("0[0-9]{9,10}");
             String NUM_PATTERN = "0[0-9]{9,10}";
             if (Pattern.matches(NUM_PATTERN, num)) {
                 System.out.println("Số điện thoại của bạn hợp lệ.");

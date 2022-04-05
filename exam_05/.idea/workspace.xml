@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2d641d7-0178-4985-8f71-8060c90fcf72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam_05.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/exam_05/Ex01.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex06.java" afterDir="false" />
+    <list default="true" id="b2d641d7-0178-4985-8f71-8060c90fcf72" name="Changes" comment="day05">
+      <change afterPath="$PROJECT_DIR$/out/production/exam_05/Ex04.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +90,14 @@
       <option name="presentableId" value="Default" />
       <updated>1649158011058</updated>
     </task>
+    <task id="LOCAL-00001" summary="day05">
+      <created>1649166994523</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649166994523</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,5 +110,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day05" />
+    <option name="LAST_COMMIT_MESSAGE" value="day05" />
   </component>
 </project>
