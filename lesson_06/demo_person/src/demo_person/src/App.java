@@ -1,12 +1,11 @@
-import model.Student;
-import service.StudentService;
+package demo_person.src;
+
+import demo_person.src.model.Student;
 
 public class App {
     public static void main(String[] args) {
         Student s1 = new Student();
         Student s2 = new Student();
-
-
 
 
         // Gọi tới phương thức nhập dữ liệu:

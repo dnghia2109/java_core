@@ -1,6 +1,6 @@
 package model;
 
-import org.w3c.dom.ls.LSOutput;
+
 
 public class Dog {
     public String size, color, breed ;

@@ -1,4 +1,4 @@
-package model;
+package demo_person.src.model;
 
 import java.util.Scanner;
 
