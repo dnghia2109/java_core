@@ -12,5 +12,6 @@ public class LibraryService {
         library.setName(sc.nextLine());
         System.out.println("Nhập nhà xuất bản:");
 
+        return library;
     }
 }
