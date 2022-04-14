@@ -39,13 +39,13 @@ public class EmployeeService {
         }while (check == false);
 
         while (true) {
-            System.out.print("Mời bạn nhập số điện thoại: ");
+            System.out.print("Nhập số điện thoại: ");
             e.phone = sc.nextLine();
             String NUM_PATTERN = "0[0-9]{9,10}";
             if (Pattern.matches(NUM_PATTERN, e.phone)) {
                 break;
             } else {
-                System.out.println("Số điện thoại của bạn hợp lệ. Vui lòng nhập lại");
+                System.out.println("Số điện thoại không hợp lệ. Vui lòng nhập lại");
             }
         }
 
@@ -56,7 +56,7 @@ public class EmployeeService {
             if (Pattern.matches(EMAIL_PATTERN, e.email)){
                 break;
             }else {
-                System.out.println("Email của bạn không hợp lệ. Vui lòng nhập lại");
+                System.out.println("Email không hợp lệ. Vui lòng nhập lại");
             }
         }
 
