@@ -1,9 +1,11 @@
-import java.time.LocalDate;
+package model;
 
-public class Serial extends Film{
+import model.Film;
+
+public class Serial extends Film {
     private int episode, avrTime;
 
-    public Serial(String id, String title, String category, String director, LocalDate premiereDay, int episode, int avgTime) {
+    public Serial(String id, String title, String category, String director, String premiereDay, int episode, int avgTime) {
         super(id, title, category, director, premiereDay);
         this.episode = episode;
         this.avrTime = avrTime;
@@ -31,7 +33,7 @@ public class Serial extends Film{
 
     @Override
     public String toString() {
-        return "Serial{" + super.toString() +
+        return "model.Serial{" + super.toString() +
                 "episode=" + episode +
                 ", avrTime=" + avrTime +
                 '}';

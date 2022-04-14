@@ -1,9 +1,11 @@
-import java.time.LocalDate;
+package model;
 
-public class Movie extends Film{
+import model.Film;
+
+public class Movie extends Film {
     private int time;
 
-    public Movie(String id, String title, String category, String director, LocalDate premiereDay, int time) {
+    public Movie(String id, String title, String category, String director, String premiereDay, int time) {
         super(id, title, category, director, premiereDay);
         this.time = time;
     }
@@ -21,7 +23,7 @@ public class Movie extends Film{
 
     @Override
     public String toString() {
-        return "Movie{" + super.toString() +
+        return "model.Movie{" + super.toString() +
                 "time=" + time +
                 '}';
     }

@@ -1,10 +1,12 @@
+package model;
+
 import java.time.LocalDate;
 
 public class Film {
-    private String id, title, category, director;
-    private LocalDate premiereDay;
+    private String id, title, category, director, premiereDay;
 
-    public Film(String id, String title, String category, String director, LocalDate premiereDay) {
+
+    public Film(String id, String title, String category, String director, String premiereDay) {
         this.id = id;
         this.title = title;
         this.category = category;
@@ -48,17 +50,17 @@ public class Film {
         this.director = director;
     }
 
-    public LocalDate getPremiereDay() {
+    public String getPremiereDay() {
         return premiereDay;
     }
 
-    public void setPremiereDay(LocalDate premiereDay) {
+    public void setPremiereDay(String premiereDay) {
         this.premiereDay = premiereDay;
     }
 
     @Override
     public String toString() {
-        return "Film{" +
+        return "model.Film{" +
                 "id='" + id + '\'' +
                 ", title='" + title + '\'' +
                 ", category='" + category + '\'' +

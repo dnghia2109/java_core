@@ -1,5 +1,7 @@
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+package service;
+
+import model.Movie;
+
 import java.util.Scanner;
 
 public class MovieService {
@@ -20,9 +22,7 @@ public class MovieService {
         movie.setDirector(sc.nextLine());
 
         System.out.println("Nhập ngày công chiếu: ");
-        String premeireDay1 = sc.nextLine();
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        movie.setPremiereDay(LocalDate.parse(premeireDay1, format));
+        movie.setPremiereDay(sc.nextLine());
 
         System.out.println("- Nhập thời lượng: ");
         movie.setTime(Integer.parseInt(sc.nextLine()));

@@ -1,5 +1,7 @@
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+package service;
+
+import model.Serial;
+
 import java.util.Scanner;
 
 public class SerialService {
@@ -20,9 +22,7 @@ public class SerialService {
         serial.setDirector(sc.nextLine());
 
         System.out.println("Nhập ngày công chiếu: ");
-        String premeireDay1 = sc.nextLine();
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        serial.setPremiereDay(LocalDate.parse(premeireDay1, format));
+        serial.setPremiereDay(sc.nextLine());
 
         System.out.println("- Nhập số tập:");
         serial.setEpisode(Integer.parseInt(sc.nextLine()));

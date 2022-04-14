@@ -1,3 +1,8 @@
+import model.Movie;
+import model.Serial;
+import service.MovieService;
+import service.SerialService;
+
 import java.util.Scanner;
 
 public class Main {
@@ -31,7 +36,9 @@ public class Main {
 
         do {
             controller();
-            int option = Integer.parseInt(sc.nextLine());
+            int option = sc.nextInt();
+            sc.nextLine();
+//            int option = Integer.parseInt(sc.nextLine());
             switch (option){
                 case 1:
                     System.out.println("======= Tất cả các phim lẻ hiện có: =======");
