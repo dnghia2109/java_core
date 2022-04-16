@@ -1,14 +1,14 @@
 public class Product {
-    private int id, soLuong;
+    private int id, quantity;
     private long price;
     private String description, productName, donVi;
 
     public Product() {
     }
 
-    public Product(int id, int soLuong, long price, String description, String productName, String donVi) {
+    public Product(int id, int quantity, long price, String description, String productName, String donVi) {
         this.id = id;
-        this.soLuong = soLuong;
+        this.quantity = quantity;
         this.price = price;
         this.description = description;
         this.productName = productName;
@@ -23,12 +23,12 @@ public class Product {
         this.id = id;
     }
 
-    public int getSoLuong() {
-        return soLuong;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setSoLuong(int soLuong) {
-        this.soLuong = soLuong;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public long getPrice() {
@@ -61,5 +61,17 @@ public class Product {
 
     public void setDonVi(String donVi) {
         this.donVi = donVi;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", productName='" + productName + '\'' +
+                ", donVi='" + donVi + '\'' +
+                '}';
     }
 }
