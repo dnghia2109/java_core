@@ -3,25 +3,25 @@ import java.util.Scanner;
 
 public class ProductController {
     public void mainMenu(){
-        System.out.println("1. Add new product");
-        System.out.println("2. Show all products");
-        System.out.println("3. Search product information by name");
-        System.out.println("4. Search product by ID");
-        System.out.println("5. Search product quantity less than 5");
-        System.out.println("6. Search product by price");
+        System.out.println("1. Thêm SP mới");
+        System.out.println("2. Xem danh sách SP");
+        System.out.println("3. Tìm SP theo tên");
+        System.out.println("4. Tìm SP theo ID");
+        System.out.println("5. Tìm SP có số lượng ít hơn 5");
+        System.out.println("6. Tìm SP theo giá thành");
         System.out.println("7. Exit");
     }
 
     public void menuFindByID(){
-        System.out.println("1. Delete product.");
-        System.out.println("2. Update product quantity.");
+        System.out.println("1. Xóa SP.");
+        System.out.println("2. Cập nhật SL của SP.");
         System.out.println("3. Exit");
     }
 
     public void menuFindByPrice(){
-        System.out.println("1. Search product price more than 50.000.");
-        System.out.println("2. Search product price from 50.000 to 100.000");
-        System.out.println("3. Search product price more than 100.000.");
+        System.out.println("1. Tìm SP có giá lớn hơn 50.000.");
+        System.out.println("2. Tìm SP có giá nằm trong khoảng 50.000 - 100.000");
+        System.out.println("3. Tìm SP có giá lớn hơn 100.000.");
         System.out.println("4. Exit");
     }
 
