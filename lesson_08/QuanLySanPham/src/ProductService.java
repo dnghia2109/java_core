@@ -27,20 +27,32 @@ public class ProductService {
         }
     }
 
-    public Product findProductByName(ArrayList<Product> list, String findName){
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Nhập tên sản phẩm muốn tìm:");
-//        String findName = sc.nextLine();
-        Product newFindProduct = new Product();
-        for (Product prd : list){
-            if (prd.getProductName().contains(findName)){
-                newFindProduct = prd;
+    // Tìm theo tên
+    public ArrayList<Product> findProductByName(ArrayList<Product> list, String findName){
+        ArrayList<Product> list1 = new ArrayList<>();
+        for (Product p : list){
+            if(p.getProductName().contains(findName)){
+                list1.add(p);
             }
         }
-
-        return newFindProduct;
+        return list1;
     }
 
+
+//    public Product findProductByName(ArrayList<Product> list, String findName){
+////        Scanner sc = new Scanner(System.in);
+////        System.out.println("Nhập tên sản phẩm muốn tìm:");
+////        String findName = sc.nextLine();
+//        Product newFindProduct = new Product();
+//        for (Product prd : list){
+//            if (prd.getProductName().contains(findName)){
+//                newFindProduct = prd;
+//            }
+//        }
+//        return newFindProduct;
+//    }
+
+    // Tìm theo ID
     public Product findProductById(ArrayList<Product> list, int findId){
         Product newFindProduct = null;
         for (Product prd : list){
@@ -65,95 +77,90 @@ public class ProductService {
     }
 
     // Tìm các sản phẩn có số lượng dưới 5
-//    public ArrayList<Product> findProductQuantityLessThan5(ArrayList<Product> list){
-//        ArrayList<Product> list1 = new ArrayList<>();
-//        for (Product p : list){
-//            if(p.getQuantity() < 5){
-//                list1.add(p);
-//            }
-//        }
-//        return list1;
-//    }
-
-    public Product findProductQuantityLessThan05(ArrayList<Product> list){
-        Product productName = null;
+    public ArrayList<Product> findProductQuantityLessThan5(ArrayList<Product> list){
+        ArrayList<Product> list1 = new ArrayList<>();
         for (Product p : list){
             if(p.getQuantity() < 5){
-                productName = p;
+                list1.add(p);
             }
         }
-        return productName;
+        return list1;
     }
+//    public Product findProductQuantityLessThan05(ArrayList<Product> list){
+//        Product productName = null;
+//        for (Product p : list){
+//            if(p.getQuantity() < 5){
+//                productName = p;
+//            }
+//        }
+//        return productName;
+//    }
 
     // Tìm sản phẩm theo mức giá < 50000
-//    public ArrayList<Product> findProductPriceLessThan50000(ArrayList<Product> list){
-////        Scanner sc = new Scanner(System.in);
-////        int option = Integer.parseInt(sc.nextLine());
-////        ArrayList<Product> list1 = new ArrayList<>();
-////        switch (option){
-////            case 1:
-////        }
+    public ArrayList<Product> findProductPriceLessThan50000(ArrayList<Product> list){
+//        Scanner sc = new Scanner(System.in);
+//        int option = Integer.parseInt(sc.nextLine());
 //        ArrayList<Product> list1 = new ArrayList<>();
-//        for (Product p : list){
-//            if(p.getPrice() < 50000){
-//                list1.add(p);
-//            }
+//        switch (option){
+//            case 1:
 //        }
-//        return list1;
-//
-//    }
-
-    public Product findProductPriceLessThan50000(ArrayList<Product> list){
-        Product product = null;
+        ArrayList<Product> list1 = new ArrayList<>();
         for (Product p : list){
             if(p.getPrice() < 50000){
-                product = p;
+                list1.add(p);
             }
         }
-        return product;
+        return list1;
     }
-
-    // Tìm sản phẩm theo mức giá từ 50000-100000
-//    public ArrayList<Product> findProductPriceBetween50000and100000(ArrayList<Product> list){
-//        ArrayList<Product> list1 = new ArrayList<>();
+//    public Product findProductPriceLessThan50000(ArrayList<Product> list){
+//        Product product = null;
 //        for (Product p : list){
-//            if((p.getPrice() >= 50000) && (p.getPrice() < 100000)){
-//                list1.add(p);
+//            if(p.getPrice() < 50000){
+//                product = p;
 //            }
 //        }
-//        return list1;
+//        return product;
 //    }
 
-    public Product findProductPriceBetween50000and100000(ArrayList<Product> list){
-        Product product = null;
+    // Tìm sản phẩm theo mức giá từ 50000-100000
+    public ArrayList<Product> findProductPriceBetween50000and100000(ArrayList<Product> list){
+        ArrayList<Product> list1 = new ArrayList<>();
         for (Product p : list){
             if((p.getPrice() >= 50000) && (p.getPrice() < 100000)){
-                product = p;
+                list1.add(p);
             }
         }
-        return product;
+        return list1;
     }
+//    public Product findProductPriceBetween50000and100000(ArrayList<Product> list){
+//        Product product = null;
+//        for (Product p : list){
+//            if((p.getPrice() >= 50000) && (p.getPrice() < 100000)){
+//                product = p;
+//            }
+//        }
+//        return product;
+//    }
 
 
 
     // Tìm sản phẩm theo mức giá > 100000
-//    public ArrayList<Product> findProductPriceMoreThan100000(ArrayList<Product> list){
-//        ArrayList<Product> list1 = new ArrayList<>();
-//        for (Product p : list){
-//            if(p.getPrice() >= 100000){
-//                list1.add(p);
-//            }
-//        }
-//        return list1;
-//    }
-
-    public Product findProductPriceMoreThan100000(ArrayList<Product> list){
-        Product product = null;
+    public ArrayList<Product> findProductPriceMoreThan100000(ArrayList<Product> list){
+        ArrayList<Product> list1 = new ArrayList<>();
         for (Product p : list){
             if(p.getPrice() >= 100000){
-                product = p;
+                list1.add(p);
             }
         }
-        return product;
+        return list1;
     }
+//    public Product findProductPriceMoreThan100000(ArrayList<Product> list){
+//        Product product = null;
+//        for (Product p : list){
+//            if(p.getPrice() >= 100000){
+//                product = p;
+//            }
+//        }
+//        return product;
+//    }
 }
