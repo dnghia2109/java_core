@@ -1,0 +1,31 @@
+[{
+  "id": 1,
+  "first_name": "Frieda",
+  "last_name": "Sainsberry",
+  "email": "fsainsberry0@cisco.com",
+  "gender": "Female"
+}, {
+  "id": 2,
+  "first_name": "Forrester",
+  "last_name": "Dysert",
+  "email": "fdysert1@parallels.com",
+  "gender": "Male"
+}, {
+  "id": 3,
+  "first_name": "Jabez",
+  "last_name": "Vennard",
+  "email": "jvennard2@cnbc.com",
+  "gender": "Male"
+}, {
+  "id": 4,
+  "first_name": "Cherri",
+  "last_name": "Lisett",
+  "email": "clisett3@eventbrite.com",
+  "gender": "Female"
+}, {
+  "id": 5,
+  "first_name": "Harman",
+  "last_name": "Bartosek",
+  "email": "hbartosek4@shutterfly.com",
+  "gender": "Male"
+}]
