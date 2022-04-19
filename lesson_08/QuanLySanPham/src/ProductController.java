@@ -22,7 +22,7 @@ public class ProductController {
         System.out.println("1. Search product price more than 50.000.");
         System.out.println("2. Search product price from 50.000 to 100.000");
         System.out.println("3. Search product price more than 100.000.");
-        System.out.println("4. Thoát");
+        System.out.println("4. Exit");
     }
 
     public void mainController(){
