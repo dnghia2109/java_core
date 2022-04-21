@@ -3,12 +3,6 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserService {
-    public void showUser(ArrayList<User> list){
-        for (User u : list){
-            System.out.println(u);
-        }
-    }
-
 
     public void signIn(ArrayList<User> userArrayList){
         Scanner sc = new Scanner(System.in);
