@@ -3,17 +3,23 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserService {
+    public void showUser(ArrayList<User> list){
+        for (User u : list){
+            System.out.println(u);
+        }
+    }
+
 
     public void signIn(ArrayList<User> userArrayList){
         Scanner sc = new Scanner(System.in);
         boolean flag = true, check = true;
-        User user = new User();
+        User newUser = new User();
         do {
             System.out.println("- Username:");
             String checkUsername = sc.nextLine();
             for (User user1 : userArrayList){
                 if (user1.getUserName().equals(checkUsername)){
-                    user = user1;
+                    newUser = user1;
                     flag = false;
                 }else {
                     System.out.println("Kiểm tra lại Username.");
@@ -24,10 +30,10 @@ public class UserService {
         System.out.println("- Password:");
         String checkPassword = sc.nextLine();
         do {
-            if (user.getPassword().equals(checkPassword)){
-                System.out.println("Chào mừng " + user.getUserName() + ", bạn có thể thực hiện" + " các công việc sau:");
-                signInComplete(userArrayList, user);
-                flag = false;
+            if (newUser.getPassword().equals(checkPassword)){
+                System.out.println("Chào mừng " + newUser.getUserName() + ", bạn có thể thực hiện" + " các công việc sau:");
+                signInComplete(userArrayList, newUser);
+                check = false;
             }else {
                 int option = Integer.parseInt(sc.nextLine());
                 switch (option){
@@ -35,8 +41,27 @@ public class UserService {
                         signIn(userArrayList);
                         break;
                     case 2:
-
+                        forgotPass(newUser);
+                        check = false;
+                        break;
                 }
+            }
+        }while (check);
+    }
+
+
+    // Quên mật khẩu
+    public static void forgotPass(User user){
+        Scanner sc = new Scanner(System.in);
+        boolean flag = true;
+        do {
+            System.out.println("- Email: ");
+            String fEmail = sc.nextLine();
+            if(user.getEmail().equals(fEmail)){
+                checkNewPassword(user);// nhập mk mới
+                flag = false;
+            } else {
+                System.out.println("Không tồn tại tài khoản.");
             }
         }while (flag);
     }
@@ -94,7 +119,7 @@ public class UserService {
                     checkNewEmail(userArrayList, user);
                     break;
                 case 3:
-                    checkNewPassword(userArrayList, user);
+                    checkNewPassword( user);
                     break;
                 case 4:
                     flag = false;
@@ -110,37 +135,14 @@ public class UserService {
     }
 
     // Đăng ký
-//    public User createNewUser(){
-//        Scanner sc = new Scanner(System.in);
-//        User us = new User();
-//        System.out.println("- Username:");
-//        us.setUserName(sc.nextLine());
-//
-//        boolean flag = true;
-//        while (flag){
-//            System.out.println("- Email:");
-//            us.setEmail(sc.nextLine());
-//            String regexEmail = "^[a-zA-Z][\\\\w-]+@([\\\\w]+\\\\.[\\\\w]+|[\\\\w]+\\\\.[\\\\w]{2,}\\\\.[\\\\w]{2,})$";
-//            if (Pattern.matches(regexEmail, us.getEmail())){
-//                flag = false;
-//            }else {
-//                System.out.println("Nhập email đúng định dạng");
-//            }
-//        }
-//
-//        while (flag){
-//            System.out.println("- Password:");
-//            us.setPassword(sc.nextLine());
-//            String regexPassword = "";
-//            if (Pattern.matches(regexPassword, us.getPassword())){
-//                flag = false;
-//            }else {
-//                System.out.println("Nhập mật khẩu dài từ 7 đến 15 ký tự, chứa ít nhất 1 ký tự in hoa, 1 ký tự đặc biệt");
-//            }
-//        }
-//
-//        return us;
-//    }
+    public User createNewUser(ArrayList<User> list){
+        User user = new User();
+        checkNewUserName(list, user);
+        checkNewEmail(list, user);
+        checkNewPassword(user);
+        list.add(user);
+        return user;
+    }
 
 
     // Check username khi đăng ký + Thay đổi username
@@ -164,48 +166,45 @@ public class UserService {
                 user.setUserName(checkUserName);
                 flag = false;
             }
-
         }while (flag);
     }
 
 
     // Check Email khi đăng ký + Thay đổi email
-    public static void checkNewEmail(ArrayList<User> userArrayList, User user){
+    public static void checkNewEmail(ArrayList<User> userArrayList, User user) {
         Scanner sc = new Scanner(System.in);
-        boolean  flag = false;
+        String regexEmail = "^[a-zA-Z][\\\\w-]+@([\\\\w]+\\\\.[\\\\w]+|[\\\\w]+\\\\.[\\\\w]{2,}\\\\.[\\\\w]{2,})$";
+        boolean flag = false;
+        String checkEmail = "";
         do {
             System.out.println("- Nhập email:");
-            String regexEmail = "^[a-zA-Z][\\\\w-]+@([\\\\w]+\\\\.[\\\\w]+|[\\\\w]+" +
-                    "\\\\.[\\\\w]{2,}\\\\.[\\\\w]{2,})$";
-
-            String checkEmail = sc.nextLine();
-            if (Pattern.matches(regexEmail, checkEmail)){
-                if (userArrayList.size() > 0 ){
-                    for (User user1 : userArrayList){
-                        if (user1.getEmail().equals(checkEmail)){
+            checkEmail = sc.nextLine();
+            if (Pattern.matches(regexEmail, checkEmail)) {
+                if (userArrayList.size() > 0) {
+                    for (User user1 : userArrayList) {
+                        if (user1.getEmail().equals(checkEmail)) {
                             System.out.println("Email đã tổồn tại! Vui lòng sử dụng Email khác.");
                             flag = true;
-                            //break;
-                        }else {
+                            break;
+                        } else {
                             user.setEmail(checkEmail);
                             flag = false;
                         }
                     }
-                }else {
+                } else {
                     user.setEmail(checkEmail);
                     flag = false;
                 }
-            }else {
+            } else {
                 System.out.println("Nhập email đúng định dạng");
                 flag = true;
-//                break;
             }
-        }while (flag);
+        } while (flag);
     }
 
 
     // Check password khi đăng ký +Thay đổi password
-    public static void checkNewPassword(ArrayList<User> userArrayList, User user){
+    public static void checkNewPassword( User user){
         Scanner sc = new Scanner(System.in);
         boolean  flag = false;
         do {
@@ -219,7 +218,7 @@ public class UserService {
                 System.out.println("Nhập password đúng định dạng dài từ 7 " +
                         "đến 15 ký tự, chứa ít nhất 1 ký tự in hoa, 1 ký tự đặc biệt");
                 flag = true;
-//                break;
+                break;
             }
         }while (flag);
 

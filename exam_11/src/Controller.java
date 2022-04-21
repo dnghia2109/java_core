@@ -27,8 +27,11 @@ public class Controller {
             int option = Integer.parseInt(sc.nextLine());
             switch (option){
                 case 1:
+                    service.createNewUser(listUser);
+                    service.showUser(listUser);
                     break;
                 case 2:
+                    service.signIn(listUser);
                     break;
             }
         } while (check);
