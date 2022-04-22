@@ -61,43 +61,6 @@ public class UserService {
     }
 
 
-    // Ktra username khi đăng nhập
-    public User checkUserNameSignIn(ArrayList<User> userArrayList){
-        User user =  new User();
-        Scanner sc = new Scanner(System.in);
-        boolean flag = true;
-        do {
-            System.out.println("- Username:");
-            String checkUsername = sc.nextLine();
-            for (User user1 : userArrayList){
-                if (user1.getUserName().equals(checkUsername)){
-                    user = user1;
-                    flag  = false;
-                }
-            }
-        }while (flag);
-
-        return user;
-    }
-
-    // Ktra password khi đăng nhập
-    public static void checkPasswordSignIn(ArrayList<User> userArrayList, User user){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("- Password:");
-        String checkPassword = sc.nextLine();
-        boolean flag = true, check = true;
-        do {
-            if (user.getPassword().equals(checkPassword)){
-                System.out.println("Chào mừng " + user.getUserName() + ", bạn có thể thực hiện các công việc sau:");
-                signInComplete(userArrayList, user);
-                flag = false;
-            }else {
-
-            }
-        }while (flag);
-
-    }
-
     // Đăng nhập thành công
     public static void signInComplete(ArrayList<User> userArrayList, User user){
         Scanner sc = new Scanner(System.in);
