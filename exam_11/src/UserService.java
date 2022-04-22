@@ -167,7 +167,7 @@ public class UserService {
     // Check Email khi đăng ký + Thay đổi email
     public static void checkNewEmail(ArrayList<User> userArrayList, User user) {
         Scanner sc = new Scanner(System.in);
-        String regexEmail = "^[a-zA-Z][\\\\w-]+@([\\\\w]+\\\\.[\\\\w]+|[\\\\w]+\\\\.[\\\\w]{2,}\\\\.[\\\\w]{2,})$";
+        String regexEmail = "^[a-zA-Z][\\w-]+@([\\w]+\\.[\\w]+|[\\w]+\\.[\\w]{2,}\\.[\\w]{2,})$";
         boolean flag = false;
         String checkEmail = "";
         do {
