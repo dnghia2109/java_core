@@ -6,7 +6,6 @@ public class Controller {
         System.out.println("====== Main menu ======");
         System.out.println("1. Đăng nhập.");
         System.out.println("2. Đăng ký.");
-        System.out.println("3. Thoát");
     }
 
     public static void signInCompleteMenu(){
@@ -23,6 +22,8 @@ public class Controller {
         System.out.println("3. Thoát.");
     }
 
+
+
     public void mainController(){
         Scanner sc = new Scanner(System.in);
         boolean check = true;
@@ -36,15 +37,15 @@ public class Controller {
                 case 1:
                     service.signIn(listUser);
                     break;
+
                 case 2:
+//                    service.createNewUser(listUser);
                     listUser.add(service.createNewUser());
                     break;
                 case 3:
                     check = false;
                     break;
-                default:
-                    System.out.println("Chọn 1-3.");
-                    break;
+
             }
         } while (check);
 

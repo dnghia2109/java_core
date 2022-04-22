@@ -26,6 +26,7 @@ public class UserService {
         do {
             if (newUser.getPassword().equals(checkPassword)){
                 System.out.println("Chào mừng " + newUser.getUserName() + ", bạn có thể thực hiện" + " các công việc sau:");
+//                signInComplete(userArrayList, newUser);
                 boolean flagSignInComplete = true;
                 do {
                     Controller.signInCompleteMenu();
@@ -47,10 +48,11 @@ public class UserService {
                             flagSignInComplete = false;
                             break;
                         default:
-                            System.out.println("Chọn từ 1-5.");
+                            System.out.println("Chọn từ 1-3.");
                             break;
                     }
                 }while (flagSignInComplete);
+
                 check = false;
             }else {
                 Controller.forgetPasswordMenu();
@@ -60,6 +62,8 @@ public class UserService {
                         signIn(userArrayList);
                         break;
                     case 2:
+//                        forgetPass(newUser);
+
                         boolean flagForgetPass = true;
                         do {
                             System.out.println("- Email: ");
@@ -76,16 +80,69 @@ public class UserService {
                     case 3:
                         check = false;
                         break;
-                    default:
-                        System.out.println("Chọn 1-3.");
-                        break;
                 }
             }
         }while (check);
     }
 
 
+    // Quên mật khẩu
+    public static void forgotPass(User user){
+        Scanner sc = new Scanner(System.in);
+        boolean flag = true;
+        do {
+            System.out.println("- Email: ");
+            String fEmail = sc.nextLine();
+            if(user.getEmail().equals(fEmail)){
+                checkNewPassword(user);// nhập mk mới
+                flag = false;
+            } else {
+                System.out.println("Không tồn tại tài khoản.");
+            }
+        }while (flag);
+    }
+
+
+    // Đăng nhập thành công
+    public static void signInComplete(ArrayList<User> userArrayList, User user){
+        Scanner sc = new Scanner(System.in);
+        boolean flag = true;
+        do {
+            Controller.signInCompleteMenu();
+            int option = Integer.parseInt(sc.nextLine());
+            switch (option){
+                case 1:
+                    checkNewUserName(userArrayList, user);
+                    break;
+                case 2:
+                    checkNewEmail(userArrayList, user);
+                    break;
+                case 3:
+                    checkNewPassword( user);
+                    break;
+                case 4:
+                    flag = false;
+                    break;
+                case 5:
+                    flag = false;
+                    break;
+                default:
+                    System.out.println("Chọn từ 1-3.");
+                    break;
+            }
+        }while (flag);
+    }
+
     // Đăng ký
+//    public User createNewUser(ArrayList<User> list){
+//        User user = new User();
+//        checkNewUserName(list, user);
+//        checkNewEmail(list, user);
+//        checkNewPassword(user);
+//        list.add(user);
+//        return user;
+//    }
+
     public User createNewUser(){
         User user = new User();
         ArrayList<User>  list = new ArrayList<>();
@@ -94,6 +151,7 @@ public class UserService {
         checkNewPassword(user);
         return user;
     }
+
 
 
     // Check username khi đăng ký + Thay đổi username

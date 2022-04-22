@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2d641d7-0178-4985-8f71-8060c90fcf72" name="Changes" comment="day05">
+      <change afterPath="$PROJECT_DIR$/../exam_11/exam_11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_11/out/production/exam_11/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/lesson_11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/out/production/lesson_11/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/out/production/lesson_11/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/out/production/lesson_11/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/out/production/lesson_11/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/src/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_11/src/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exam_05/Ex06.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exam_05/Ex06.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_11/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_11/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_11/src/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_11/src/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
