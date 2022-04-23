@@ -20,7 +20,8 @@ public class UserService {
                 }
             }
         }while (flag);
-
+        // Nhập password
+        System.out.println("Nhập pas");
         System.out.println("- Password:");
         String checkPassword = sc.nextLine();
         do {
