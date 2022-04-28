@@ -10,7 +10,11 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class ServiceBook {
-    Scanner sc = new Scanner(System.in);
+    public void showBook(ArrayList<Book> list){
+        for (Book book : list){
+            System.out.println(book);
+        }
+    }
 
     // Chuyển từ json sang ArrayList
     public ArrayList<Book> getListBook(){
@@ -25,12 +29,6 @@ public class ServiceBook {
         }
 
         return list;
-    }
-
-    public void showBook(ArrayList<Book> list){
-        for (Book book : list){
-            System.out.println(book);
-        }
     }
 
     // Tìm sách theo tên
@@ -78,7 +76,7 @@ public class ServiceBook {
         Collections.sort(list, new Comparator<Book>() {
             @Override
             public int compare(Book o1, Book o2) {
-                return o1.getRelease_year() > o2.getPage_number() ? 1 : -1;
+                return o1.getRelease_year() > o2.getRelease_year() ? 1 : -1;
             }
         });
     }
