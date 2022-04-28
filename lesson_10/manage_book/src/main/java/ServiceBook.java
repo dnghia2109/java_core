@@ -61,7 +61,7 @@ public class ServiceBook {
         return newList;
     }
 
-    // Sắp xếp sách theo số trang ( tăng dần )
+    // Sắp xếp sách theo số trang
     public void sortByPageNumber(ArrayList<Book> list){
         Collections.sort(list, new Comparator<Book>() {
             @Override
