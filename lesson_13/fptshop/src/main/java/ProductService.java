@@ -1,8 +1,5 @@
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 public class ProductService {
 
@@ -107,7 +104,7 @@ public class ProductService {
 
     // Liệt kê các hãng và số lượng sản phẩm của mỗi hãng
     public void quantityProductByCategory(ArrayList<Product> list) {
-        TreeMap<String, Integer> map = new TreeMap<>();
+        HashMap<String, Integer> map = new HashMap<>();
         for (Product i : list) {
             if (map.containsKey(i.getBrand())) {
                 map.put(i.getBrand(), map.get(i.getBrand()) + 1);
