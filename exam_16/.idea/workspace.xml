@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b0a46af-1d29-47c2-ba59-b6fa150f6e1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InternetBanking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InternetBankingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_exam/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_exam/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_exam/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_exam/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../final_exam/final_exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/.idea/lesson_14.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/src/main/java/Cinema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/src/main/java/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/src/main/java/MovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/ManageMovie/src/main/java/SerialService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/exam_demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/exam_demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/exam_demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/exam_demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/exam_demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/lambda_demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/src/Interface2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/src/MyInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/src/StreamAPIExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/src/person/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/lambda_demo/src/person/PersonMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/movie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/Movie1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/MovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/Serial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson_13/fptshop/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson_13/fptshop/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson_13/fptshop/src/main/java/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson_13/fptshop/src/main/java/ProductService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28q4hr4Nv8o9JiQvCODfSiFw5e1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exam_11" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b0a46af-1d29-47c2-ba59-b6fa150f6e1e" name="Changes" comment="" />
+      <created>1651930905341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651930905341</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
