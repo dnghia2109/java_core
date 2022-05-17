@@ -77,11 +77,11 @@ public class ProductService {
     public ArrayList<Product> searchByPriceAndCategory(ArrayList<Product> list, long price1, long price2) {
         ArrayList<Product> newList = new ArrayList<>();
         for (Product product : list) {
-            if (price1 < product.getPrice() && product.getPrice() < price2) {
+            if (price1 > product.getPrice() && product.getPrice() < price2) {
                 newList.add(product);
             }
         }
-        if (newList.size() == 0){
+        if (newList.size() == 0) {
             System.out.println("không có sản phẩm trong tầm giá.");
         }
         return newList;
@@ -113,5 +113,20 @@ public class ProductService {
             }
         }
         System.out.println(map);
+    }
+
+    // Tìm kiếm khi có kí tự đầu tiên trùng
+    public ArrayList<Product> findProductByFirstLetter(ArrayList<Product> list, char findName){
+        ArrayList<Product> newList = new ArrayList<>();
+        for (Product product : list){
+            String [] newArr = product.getName().split(" ");
+            for (int i = 0; i < newArr.length; i++){
+                if (newArr[i].toLowerCase().charAt(0) == findName){
+                    newList.add(product);
+                }
+            }
+        }
+
+        return newList;
     }
 }

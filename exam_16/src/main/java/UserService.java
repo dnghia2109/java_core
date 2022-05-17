@@ -19,7 +19,7 @@ public class UserService {
 //
 //    }
 
-    // Check phoneNumber (Username)
+    // Check phoneNumber (Username) + signIn
     public void signIn(ArrayList<User> list){
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
@@ -36,6 +36,7 @@ public class UserService {
                         flag = false;
                     }else {
                         System.out.println("Kiểm tra lại SĐT.");
+                        flag = true;
                     }
                 }
             }else {
@@ -53,8 +54,7 @@ public class UserService {
             System.out.println("- Nhập password:");
             String inputPassword = sc.nextLine();
             if (Pattern.matches(regexPassword, inputPassword)) {
-                if (user.getPassword().equals(inputPassword)){
-                    System.out.println("- Đăng nhập thành công.");
+                if (user.getPassword().equals(inputPassword)){;
                     Controller.internetBankingService(user);
                     flag = false;
                 }else {
