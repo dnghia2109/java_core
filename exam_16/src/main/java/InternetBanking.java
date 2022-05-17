@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 
 @Setter
@@ -15,7 +16,7 @@ public class InternetBanking {
     public SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
     private int transactionId;
     private String senderAccount;
-    private LocalDate transactionDate;
+    private LocalDateTime transactionDate;
 
     private String receiveAccount;
     private long transactionAmount;

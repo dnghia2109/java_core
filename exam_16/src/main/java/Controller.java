@@ -56,8 +56,11 @@ public class Controller {
                 case 3:
                     service2.showTransactionDetail(user.getTransactionDetail());
                     break;
+                case 4:
+                    flag = false;
+                    break;
                 default:
-                    System.out.println("Chọn 1 - 3");
+                    System.out.println("Chọn 1 - 4");
                     break;
             }
         }

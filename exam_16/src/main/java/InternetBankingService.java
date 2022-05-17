@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -74,18 +75,10 @@ public class InternetBankingService {
 
 //        transaction.setTransactionId(transactionList.size() + 1);
 
-        // Mã giao dịch
-        if (user.getTransactionDetail() == null){
-            transaction.setTransactionId(1);
-            transactionList.add(transaction);
-            user.setTransactionDetail(transactionList);
-        } else {
-            transaction.setTransactionId(user.getTransactionDetail().size() + 1);
-            user.getTransactionDetail().add(transaction);
-        }
+
 
         // Thời gian giao dịch
-        transaction.setTransactionDate(LocalDate.now());
+        transaction.setTransactionDate(LocalDateTime.now());
 
         // Nhập STK ng nhận
         String regexReceiveAccount = "^[0-9]{8,16}$";
@@ -120,9 +113,19 @@ public class InternetBankingService {
         String inputTransactionDescription = sc.nextLine();
         transaction.setTransactionDescription(inputTransactionDescription);
 
-        transactionList.add(transaction);
+//        transactionList.add(transaction);
 //        user.setTransactionDetail(transactionList);
 
+
+        // Mã giao dịch
+        if (user.getTransactionDetail() == null){
+            transaction.setTransactionId(1);
+            transactionList.add(transaction);
+            user.setTransactionDetail(transactionList);
+        } else {
+            transaction.setTransactionId(user.getTransactionDetail().size() + 1);
+            user.getTransactionDetail().add(transaction);
+        }
 
     }
 
