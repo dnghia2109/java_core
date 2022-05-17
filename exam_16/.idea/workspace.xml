@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0a46af-1d29-47c2-ba59-b6fa150f6e1e" name="Changes" comment="exam16">
+    <list default="true" id="2b0a46af-1d29-47c2-ba59-b6fa150f6e1e" name="Changes" comment="exam16(2)">
       <change afterPath="$PROJECT_DIR$/../final_exam/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../final_exam/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../final_exam/.idea/modules.xml" afterDir="false" />
@@ -47,8 +47,6 @@
       <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/Movie1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/MovieService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lesson_14/movie/src/Serial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InternetBankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InternetBankingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lesson_13/fptshop/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson_13/fptshop/src/main/java/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652777624018</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="exam16(2)">
+      <created>1652778311283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652778311283</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="exam16" />
-    <option name="LAST_COMMIT_MESSAGE" value="exam16" />
+    <MESSAGE value="exam16(2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="exam16(2)" />
   </component>
 </project>

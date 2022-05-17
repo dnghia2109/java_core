@@ -22,6 +22,14 @@ public class InternetBanking {
     private long transactionAmount;
     private String transactionDescription;
 
+    public InternetBanking(int transactionId, String senderAccount, LocalDateTime transactionDate, String receiveAccount, long transactionAmount, String transactionDescription) {
+        this.transactionId = transactionId;
+        this.senderAccount = senderAccount;
+        this.transactionDate = transactionDate;
+        this.receiveAccount = receiveAccount;
+        this.transactionAmount = transactionAmount;
+        this.transactionDescription = transactionDescription;
+    }
 
     @Override
     public String toString() {
